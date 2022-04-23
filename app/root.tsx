@@ -39,12 +39,12 @@ export const loader: LoaderFunction = async ({ request }) => {
 
 export default function App() {
   return (
-    <html lang="en" className="h-full min-h-full">
+    <html lang="en">
       <head>
         <Meta />
         <Links />
       </head>
-      <body className="h-full min-h-full p-8">
+      <body className="mb-12 p-8">
         <div className="mb-16">
           <Link to="/">John Mosesman</Link>
         </div>

@@ -40,7 +40,8 @@ const buildLegacyData = async (): Promise<GrayMatterFile<string>[]> => {
       })
   );
 
-  data = data.sort((a, b) => (a.data.date > b.data.date ? 1 : -1));
+  // Sort descending
+  data = data.sort((a, b) => (a.data.date > b.data.date ? -1 : 1));
 
   console.log("data", data);
 
@@ -59,7 +60,7 @@ export default function Writings() {
   console.log(data);
 
   return (
-    <main className="flex h-full min-h-full flex-col">
+    <main className="flex flex-col">
       <h1 className="mb-4 text-3xl">Archive</h1>
 
       {data.map((post: GrayMatterFile<string>, index: number) => (

@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react";
 
 export default function Index() {
   return (
-    <main className="flex h-full min-h-full flex-col">
+    <main className="flex flex-col">
       <div className="mb-12">
         <h1 className="mb-2 text-5xl">Hi, I'm John</h1>
         <p className="mb-2">
