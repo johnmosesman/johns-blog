@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react";
 
 export default function Index() {
   return (
-    <main className="">
+    <main className="flex h-full min-h-full flex-col">
       <div className="mb-12">
         <h1 className="mb-2 text-5xl">Hi, I'm John</h1>
         <p className="mb-2">
@@ -113,9 +113,9 @@ export default function Index() {
         </p>
         <p className="mb-2 text-sm text-gray-700">April 1, 2021</p>
       </a>
-      <a className="mb-12 block underline" href="todo">
+      <Link className="mb-12 block underline" to="writings">
         View all writings
-      </a>
+      </Link>
     </main>
   );
 }
