@@ -53,10 +53,12 @@ export const buildMarkdownFiles = async (): Promise<MarkdownFile[]> => {
       )
   );
 
-  // Sort descending
-  data = data.sort((a: MarkdownFile, b: MarkdownFile) =>
-    a.date > b.date ? -1 : 1
-  );
+  // Newest first (desc)
+  data = data
+    .sort((a: MarkdownFile, b: MarkdownFile) => {
+      return Date.parse(a.date) > Date.parse(b.date) ? 1 : -1;
+    })
+    .reverse();
 
   return data;
 };

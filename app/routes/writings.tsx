@@ -29,7 +29,7 @@ export default function Writings() {
         </svg>
         <span className="text-sm text-gray-600">Home</span>
       </Link>
-      <h1 className="mb-4 text-3xl">Writings</h1>
+      <h1 className="mb-12 text-3xl">Writings</h1>
 
       {markdownFiles.map((post: MarkdownFile, index: number) => {
         return (
