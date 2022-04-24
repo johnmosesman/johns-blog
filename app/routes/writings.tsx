@@ -29,13 +29,13 @@ export default function Writings() {
         </svg>
         <span className="text-sm text-gray-600">Home</span>
       </Link>
-      <h1 className="mb-12 text-3xl">Writings</h1>
+      <h1 className="mb-12 text-4xl">Writings</h1>
 
       {markdownFiles.map((post: MarkdownFile, index: number) => {
         return (
           <Link to={`/post/${post.slug}`} className="mb-6" key={index}>
-            <p className="font-semibold">{post.title}</p>
-            <p className="text-sm text-gray-700">{post.date}</p>
+            <p className="font-semibold md:text-xl">{post.title}</p>
+            <p className="text-sm text-gray-700 md:text-lg">{post.date}</p>
           </Link>
         );
       })}

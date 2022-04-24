@@ -58,38 +58,47 @@ export default function Index() {
   ];
 
   return (
-    <main className="flex flex-col">
-      <div className="mb-12">
-        <h1 className="mb-2 text-5xl">Hi, I'm John</h1>
-        <p className="mb-2">
-          I'm a software developer building in the web3 space at{" "}
-          <a href="https://zeroxone.xyz" className="underline">
-            0x1.
-          </a>
-        </p>
-        <p>I like helping others learn how to become a developer.</p>
+    <main className="flex flex-col ">
+      <div className="mb-12 md:mb-24">
+        <h1 className="mb-2 text-3xl md:mb-4 md:text-5xl">
+          Hi, I'm John Mosesman
+        </h1>
+
+        <div>
+          <p className="mb-2 md:text-xl">
+            I'm a software developer building web3 at{" "}
+            <a href="https://zeroxone.xyz" className="underline">
+              0x1.
+            </a>
+          </p>
+          <p className="md:text-xl">
+            I like helping others learn how to become a developer.
+          </p>
+        </div>
       </div>
 
-      <h3 className="mb-4 text-3xl">Video Resources</h3>
+      <h3 className="mb-4 text-2xl md:mb-8 md:text-3xl">Video Resources</h3>
 
       {videos.map((video, index) => {
         return <VideoPreview key={index} {...video} />;
       })}
 
       <a
-        className="mb-12 block underline"
+        className="mb-12 block underline md:text-xl"
         href="https://www.youtube.com/channel/UCmRIxrzO2UlTOUC57HXxmCA"
       >
         View all videos
       </a>
 
-      <h3 className="mb-4 text-3xl">Writing Resources</h3>
+      <h3 className="mb-4 mt-8 text-2xl md:mb-8 md:text-3xl">
+        Writing Resources
+      </h3>
 
       {articles.map((article, index) => {
         return <ArticlePreview key={index} {...article} />;
       })}
 
-      <Link className="mb-12 block underline" to="writings">
+      <Link className="mb-12 block underline md:text-xl" to="writings">
         View all writings
       </Link>
     </main>

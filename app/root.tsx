@@ -64,12 +64,12 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="p-6">
-        <div className="mb-12">
+      <body className="p-6 md:mx-auto md:max-w-2xl">
+        <div className="mb-24">
           <Nav />
         </div>
 
-        <div className="mb-12">
+        <div className="mb-12 md:mb-24">
           <Outlet />
         </div>
 

@@ -14,7 +14,7 @@ export default function Nav() {
           rel="noopener"
         >
           <svg
-            className="mr-3 h-4 w-4 fill-current stroke-current text-gray-700"
+            className="mr-3 h-4 w-4 fill-current stroke-current text-gray-600"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -29,7 +29,7 @@ export default function Nav() {
           rel="noopener"
         >
           <svg
-            className="h-4 w-4 fill-current stroke-current text-gray-700"
+            className="h-4 w-4 fill-current stroke-current text-gray-600"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
