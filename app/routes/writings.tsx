@@ -32,7 +32,7 @@ const buildMarkdownFile = async (
   });
 
   return {
-    slug: fileName,
+    slug: fileName.replace(".md", ""),
     title: parsedData.data.title,
     date: parsedData.data.date,
     content: parsedData.content,
@@ -74,11 +74,11 @@ export default function Writings() {
 
   return (
     <main className="flex flex-col">
-      <h1 className="mb-4 text-3xl">Archive</h1>
+      <h1 className="mb-4 text-3xl">Writings</h1>
 
       {markdownFiles.map((post: MarkdownFile, index: number) => {
         return (
-          <Link to={post.slug} className="mb-6" key={index}>
+          <Link to={`/post/${post.slug}`} className="mb-6" key={index}>
             <p className="font-semibold">{post.title}</p>
             <p className="text-sm text-gray-700">
               {strftime("%B %e, %Y", new Date(post.date))}

@@ -4,7 +4,7 @@ title = "After CRUD: Build and Consume an API"
 tags = ["career"]
 +++
 
-So at this point, you've [picked a programming language]({{< ref "how-to-pick-a-programming-language.md" >}}), you've [made your first projects]({{< ref "types-of-projects.md" >}}), and you are starting to get the hang of things.
+So at this point, you've [picked a programming language](/post/how-to-pick-a-programming-language), you've [made your first projects](/post/types-of-projects), and you are starting to get the hang of things.
 
 Awesome! Getting this far is a big accomplishment, and you should be very proud of that.
 
@@ -32,7 +32,7 @@ In our modern life, we create standards&mdash;standards around electrical voltag
 
 In the technology world, we use tons of standards for this very reason. It's why we can communicate so easily across the world using our internet-enabled devices. They're all talking to each other via layers upon layers of standards and protocols.
 
-When it comes to the web, one of the foremost standards is the HTTP spec (yes the same spec used when you type `http://google.com` into your browser). There are many facets of the HTTP spec, but for now we're only concerned with a few parts: the __URL__, and the __HTTP verb__.
+When it comes to the web, one of the foremost standards is the HTTP spec (yes the same spec used when you type `http://google.com` into your browser). There are many facets of the HTTP spec, but for now we're only concerned with a few parts: the **URL**, and the **HTTP verb**.
 
 ### HTTP verbs
 
@@ -52,10 +52,10 @@ Now here's where things start to deviate a little bit. Similar to our physical-w
 
 Here are some of the more popular API schemas:
 
-* RESTful
-* JSONAPI
-* GraphQL
-* SOAP
+- RESTful
+- JSONAPI
+- GraphQL
+- SOAP
 
 It's not important right now to know the intricacies of each of these. Just be aware that they exist and they all have their own different formats and ways of use. You will come across them at some point in your career.
 
@@ -98,7 +98,7 @@ $ curl http://localhost:3000/users
 
 Rails follows the _RESTful_ API convention. In a RESTful API, the HTTP verb and the URL structure are very specific.
 
-In this example, we sent a `GET` request (that's the default for `curl`), and we requested the `/users` resources. By REST convention, a _plural resource name_ with _a `GET` verb_ means return __all of the resources for that type__ (in this case, `User`).
+In this example, we sent a `GET` request (that's the default for `curl`), and we requested the `/users` resources. By REST convention, a _plural resource name_ with _a `GET` verb_ means return **all of the resources for that type** (in this case, `User`).
 
 I had already added some users into the database, and so we see those two users' data returned.
 
@@ -186,10 +186,10 @@ $ curl -X PUT http://localhost:3000/users/3 \
 
 Pretty straightforward right?
 
-* `PUT` for the verb
-* `/users/3` for that specific user
-* `'{ "user": { "age": 20 } }'` the data we want to update (age)
-* `application/json` the same content type
+- `PUT` for the verb
+- `/users/3` for that specific user
+- `'{ "user": { "age": 20 } }'` the data we want to update (age)
+- `application/json` the same content type
 
 ### Deleting a user
 
@@ -217,10 +217,10 @@ As you start building more complex applications, they will begin communicating w
 
 So, go get some practice building and using an API. It will be a very useful skill. Here's some ideas for you:
 
-* What are the most common HTTP response codes and what do they represent? (You probably already know "404 not found.")
-* What are the most common HTTP verbs sent with a HTTP request, and what CRUD actions do they map to?
-* Build a simple user CRUD API like the one above
-* Give each user an authentication token (a random string) and pass this as a header to authenticate them. Only allow a user to update their own information.
+- What are the most common HTTP response codes and what do they represent? (You probably already know "404 not found.")
+- What are the most common HTTP verbs sent with a HTTP request, and what CRUD actions do they map to?
+- Build a simple user CRUD API like the one above
+- Give each user an authentication token (a random string) and pass this as a header to authenticate them. Only allow a user to update their own information.
 
 That's all for this one. Feel free to reach out to me on twitter ([@johnmosesman](https://twitter.com/johnmosesman)) if you have any questions on this or any other development topic.
 

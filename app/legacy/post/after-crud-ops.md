@@ -4,7 +4,7 @@ title = "After CRUD: Practical DevOps for side projects"
 tags = ["career"]
 +++
 
-If you've been following along with these posts, we're working towards full-time employment as a software developer. We started with [making simple apps]({{< ref "types-of-projects.md" >}}) and exploring some concepts and tooling around those apps, and I wanted to do one more post on some technical skills to develop before we get into the softer skills like interviewing and finding your first job.
+If you've been following along with these posts, we're working towards full-time employment as a software developer. We started with [making simple apps](/post/types-of-projects) and exploring some concepts and tooling around those apps, and I wanted to do one more post on some technical skills to develop before we get into the softer skills like interviewing and finding your first job.
 
 Up until this point we've dealt with the act of software engineering directly: the actual programming of the app, learning how apps communicate via APIs, and working with other developers by using Git.
 
@@ -20,9 +20,9 @@ Our goal here is not to delve too deep into the world of ops&mdash;but to get so
 
 So with that said, let's begin! In this post I'll talk about three different things:
 
-* Hosting
-* Continuous integration / continuous deployment (CI/CD)
-* Extras (monitoring, error tracking, etc)
+- Hosting
+- Continuous integration / continuous deployment (CI/CD)
+- Extras (monitoring, error tracking, etc)
 
 ## Hosting
 
@@ -32,7 +32,7 @@ The first question is, what server is going to run your app? For 99.9% of cases,
 
 If you've never deployed an app before, I recommend using [Heroku](https://www.heroku.com/). It's simple, free to start, and it will get you up and running in no time. They support essentially every modern web language and framework.
 
-For the purpose of this article, I'm going to use the test app we made in the post on [learning how to build APIs.]({{< ref "after-crud-apis.md" >}}) If you want to practice some of the things in this post on your own it's also on [Github here.](https://github.com/johnmosesman/blog_sample_api) It's a trivially-small app, but it will work great for these simple tasks.
+For the purpose of this article, I'm going to use the test app we made in the post on [learning how to build APIs.](/post/after-crud-apis) If you want to practice some of the things in this post on your own it's also on [Github here.](https://github.com/johnmosesman/blog_sample_api) It's a trivially-small app, but it will work great for these simple tasks.
 
 At least for a Rails app, deploying to Heroku is so easy&mdash;granted I've already signed up for a Heroku account and installed the [Heroku toolbelt](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) already&mdash;but after that one-time setup, it's only a few simple commands to deploy my app and have it live on the internet.
 
@@ -86,7 +86,6 @@ And with just those few commands, we now have an app live on the internet! It's 
 And it does work: you can visit [https://blog-sample-api.herokuapp.com/users.json](https://blog-sample-api.herokuapp.com/users.json). The only thing you'll probably see is an empty array, `[]`, since there's no data in the database (but based on my previous post on APIs you could `POST` some data to it :)).
 
 The only other thing I did was run `heroku run rails db:migrate` as I needed to migrate the database for my Rails API to fully work.
-
 
 ### AWS
 
@@ -144,8 +143,8 @@ This time when the build gets run our test suite will be run as well, and if it 
 
 Typically the workflow would look something like this:
 
-* Push or merge to `staging` or any other `origin` branch runs the tests on CI
-* Push or merge to `master` runs the tests on CI, and if they pass, deploys the app.
+- Push or merge to `staging` or any other `origin` branch runs the tests on CI
+- Push or merge to `master` runs the tests on CI, and if they pass, deploys the app.
 
 ## Extras
 

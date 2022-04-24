@@ -1,0 +1,49 @@
+.post-slug p {
+  margin-bottom: 12px;
+}
+
+.post-slug img {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.post-slug ul {
+  margin-bottom: 12px;
+  margin-left: 32px;
+  list-style-type: disc;
+}
+
+.post-slug li {
+  margin-bottom: 4px;
+}
+
+.post-slug a {
+  border-bottom: 1px solid #000;
+}
+
+.post-slug iframe {
+  width: 100%;
+}
+
+.post-slug hr {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.post-slug h2 {
+  margin-top: 24px;
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+.post-slug h3 {
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.post-slug pre {
+  border-radius: 3px;
+  padding: 12px;
+  background-color: #efefef;
+  margin: 16px 0px;
+}

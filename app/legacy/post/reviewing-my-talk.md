@@ -8,7 +8,7 @@ In 2018 I gave a talk to a local chapter of freeCodeCamp here in Oklahoma City c
 
 I enjoyed giving the talk, and even though there were only a dozen or so people who attended, I thought it was a good talk and that it had a lot of valuable advice in there.
 
-What I didn't expect however, was that the local OKC broadcast of that talk would be picked up by the main freeCodeCamp channel&mdash;where it got over 60,000 views.
+What I didn't expect however, was that the local OKC broadcast of that talk would be picked up by the main freeCodeCamp channel&mdash;where it got 300k views.
 
 ![FCC views](/images/fcc_views.png)
 
@@ -19,4 +19,3 @@ Because of that, I wanted to update the advice I gave in 2018. Some of my stance
 I've recorded a video highlighting important sections from that talk that I think I need to address&mdash;as well as answered all of the comments left on the video.
 
 You can watch [the review video here](https://www.youtube.com/watch?v=5azUw1Asp20), and if you haven't seen the original talk, [it's here.](https://www.youtube.com/watch?v=lo4BSraYvc8)
-

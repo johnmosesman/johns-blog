@@ -15,10 +15,25 @@ import {
 } from "@remix-run/react";
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
+import baseStylesheetUrl from "./styles/base.css";
 import { getUser } from "./session.server";
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: tailwindStylesheetUrl }];
+  return [
+    { rel: "stylesheet", href: tailwindStylesheetUrl },
+    { rel: "stylesheet", href: baseStylesheetUrl },
+    { rel: "preconnect", href: "https://fonts.googleapis.com" },
+    { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: true },
+    {
+      href: "https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap",
+      rel: "stylesheet",
+    },
+    {
+      rel: "icon",
+      href: "/favicon.png",
+      type: "image/png",
+    },
+  ];
 };
 
 export const meta: MetaFunction = () => ({
@@ -44,9 +59,11 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="mb-12 p-8">
+      <body className="p-6">
         <div className="mb-16">
-          <Link to="/">John Mosesman</Link>
+          <Link className="site-logo" to="/">
+            JM
+          </Link>
         </div>
 
         <Outlet />

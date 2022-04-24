@@ -4,7 +4,7 @@ title = "After CRUD: Intro to Git and basic workflows"
 tags = ["career"]
 +++
 
-Hopefully at this point you've [built a number of CRUD apps]({{< ref "types-of-projects.md" >}}), you've enhanced those apps with little side quests like user authentication (sign up / login) and email sending, you've [built and consumed an API]({{< ref "after-crud-apis.md" >}}), and you're ready for the next challenge.
+Hopefully at this point you've [built a number of CRUD apps](/post/types-of-projects), you've enhanced those apps with little side quests like user authentication (sign up / login) and email sending, you've [built and consumed an API](/post/after-crud-apis), and you're ready for the next challenge.
 
 This next topic is a little smaller in nature compared to apps or APIs, but it is still very important nonetheless. This topic is Git, and it is a crucial component of working successfully in a professional development environment. Having some practical experience with Git will make your transition into a full-time position much easier&mdash;and as previously mentioned several times&mdash;will show potential employers that you can handle working in a mature development environment.
 
@@ -16,7 +16,7 @@ One of the most important and difficult aspects of software engineering is not t
 
 It's easy to write code in isolation. You wrote it, so it makes sense to you. You have the mental model and the surrounding knowledge all stored in your head&mdash;so your code makes sense to you in an obvious way.
 
-If you've ever looked at another person's code (or looked at a popular library or package for the language of your choosing), you will become quickly aware of one of the most important tenants of software development: __software is easier to write than it is to read.__
+If you've ever looked at another person's code (or looked at a popular library or package for the language of your choosing), you will become quickly aware of one of the most important tenants of software development: **software is easier to write than it is to read.**
 
 The majority of your software writing experience will be spent reading and trying to understand existing code&mdash;not writing new code. New code is written once, but it will be read over and over again for the lifetime of the codebase.
 
@@ -38,7 +38,7 @@ There are other questions too, like when was this code added? What was the conte
 
 These are important questions, and the code just doesn't tell us enough information. In other cases, what if two developers want to change this method at the same time? Who's change goes first? And what happens to the second developer's change? Does it overwrite the first, or is it in addition?
 
-To solve these problems, programmers use something called __source control.__ Source control is, like it sounds, a way to control the "source" of the code&mdash;the master copy of the code if you will&mdash;and all of the changes that happen to it. It's the power of Dropbox saving incremental changes and backups, annotated comments, and the ability to fast-forward and rewind through time in the codebase all rolled into one.
+To solve these problems, programmers use something called **source control.** Source control is, like it sounds, a way to control the "source" of the code&mdash;the master copy of the code if you will&mdash;and all of the changes that happen to it. It's the power of Dropbox saving incremental changes and backups, annotated comments, and the ability to fast-forward and rewind through time in the codebase all rolled into one.
 
 There are several different source control systems, but arguably the largest and most popular one is [Git](https://git-scm.com/).
 
@@ -104,9 +104,9 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 This tells us a couple things:
 
-* We're on a branch called `master`
-* There have been no commits
-* There's an "untracked" file called `test.txt`
+- We're on a branch called `master`
+- There have been no commits
+- There's an "untracked" file called `test.txt`
 
 We'll come back to branches in a minute, but as for the other two items, "there have been no commits" (which makes sense, we haven't committed anything yet&mdash;even if we don't know what "committing" really means yet), and we have an untracked file: `test.txt`.
 
@@ -244,21 +244,21 @@ Let's say I misspelled that sentence we added a few times and I saved after each
 
 > "Ocne there was a cat."
 
-> *Once is misspelled, edit and save.*
+> _Once is misspelled, edit and save._
 
 > "Once there was a cat."
 
-> *Forgot the cat's name, edit and save.*
+> _Forgot the cat's name, edit and save._
 
 > "Once there was a cat named Jill."
 
-> *Wrong name of the cat, edit and save.*
+> _Wrong name of the cat, edit and save._
 
 > "Once there was a cat named Bill."
 
 I don't want to commit each of those changes&mdash;the work isn't useful until it's spelled correctly and the name is correct. So although I might save my file a few times, I only want to commit changes that are completed.
 
-As a general rule, you want to __group logical chunks of work into the same commit.__ In our case above, committing an empty file doesn't really do us any good&mdash;the file really belongs with the new contents that we added.
+As a general rule, you want to **group logical chunks of work into the same commit.** In our case above, committing an empty file doesn't really do us any good&mdash;the file really belongs with the new contents that we added.
 
 That is not to say that you don't want to commit partially-working code. It can sometimes be very useful to commit something that you know isn't quite right, but it's part-way there or in the direction you want to go. This is similar to spamming save after every sentence you write. The advantage of having something committed is you can return to the state of the code at any point in time that has a commit, but that's a slightly more advanced topic than these basics.
 
@@ -372,7 +372,7 @@ Date:   Sat Jul 20 09:14:16 2019 -0500
 
 ### Merging
 
-Now that our work is done on our `add_the_dog` branch, we need to get that change merged into master. Merging is one of the Git techniques we can use to combine our work with others. One of the other more popular workflows is by using `git rebase`, but we'll leave that for now (if you're curious about that, I wrote about that previously [here]({{< ref "easy-use-for-git-rebase.md" >}})).
+Now that our work is done on our `add_the_dog` branch, we need to get that change merged into master. Merging is one of the Git techniques we can use to combine our work with others. One of the other more popular workflows is by using `git rebase`, but we'll leave that for now (if you're curious about that, I wrote about that previously [here](/post/easy-use-for-git-rebase)).
 
 To merge our `add_the_dog` branch _into_ `master`, we use `git merge`:
 
@@ -402,11 +402,11 @@ If you follow the steps after making a new repo you will end up adding a new Git
 
 Create a new branch locally, commit a change to it, and push it to the repo from the step above. Then go into Github, create a new Pull Request, merge it, and then finally pull those changes back into your local master branch. The steps will look something like this:
 
-* Create new branch and make a commit on it
-* Push the branch to Github (`origin`)
-* Create a PR of your branch into `master`, and merge it.
-* Checkout `master` locally, and use `git pull` to retrieve the merged changes.
-* Verify your `master` branch locally has the new changes.
+- Create new branch and make a commit on it
+- Push the branch to Github (`origin`)
+- Create a PR of your branch into `master`, and merge it.
+- Checkout `master` locally, and use `git pull` to retrieve the merged changes.
+- Verify your `master` branch locally has the new changes.
 
 ## Conclusion
 

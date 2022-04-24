@@ -6,9 +6,9 @@ tags = ["meta"]
 
 +++
 
-__07/02/2019 Update:__ I've always wanted to expound on the steps listed here, and I've just started doing that. I want to lay out a path for people who want to become developers to follow. I can't do the work for you, but I can help show you the work that needs to be done.
+**07/02/2019 Update:** I've always wanted to expound on the steps listed here, and I've just started doing that. I want to lay out a path for people who want to become developers to follow. I can't do the work for you, but I can help show you the work that needs to be done.
 
-The first of these posts is here, and it's about [picking your first programming language.]({{< ref "how-to-pick-a-programming-language.md" >}})
+The first of these posts is here, and it's about [picking your first programming language.](/post/how-to-pick-a-programming-language)
 
 Thanks!
 

@@ -24,13 +24,13 @@ But the problem is: there are _so many of them and everyone has an opinion._
 
 I understand the anxiety around it. This is something you're going to be (or have been) investing a lot of time and effort into, and you want to make a good and intelligent choice.
 
-I'll tell you the best way to pick a language: __just pick one.__
+I'll tell you the best way to pick a language: **just pick one.**
 
 Really, it's that simple. Just pick a language&mdash;any old one.
 
-_"But how can this be?"_, you ask. _Surely_ we can do better than just picking something _randomly_&mdash;surely these languages have tradeoffs and conditions that would make one better than the other? And the answer is: you're right. There _are_ differences and tradeoffs to consider here, but when you are first starting out __none of those reasons matter*.__
+_"But how can this be?"_, you ask. _Surely_ we can do better than just picking something _randomly_&mdash;surely these languages have tradeoffs and conditions that would make one better than the other? And the answer is: you're right. There _are_ differences and tradeoffs to consider here, but when you are first starting out **none of those reasons matter\*.**
 
-(*I will discuss some caveats at the end, but go with me here.)
+(\*I will discuss some caveats at the end, but go with me here.)
 
 ## Music
 
@@ -80,9 +80,9 @@ Different name, different flavor, but still a chicken, eh?
 
 (Ok but seriously, they look very similar right?)
 
-And even though the syntax and features of a language differ, you've learned some extremely valuable base skills: __the fundamentals of programming.__
+And even though the syntax and features of a language differ, you've learned some extremely valuable base skills: **the fundamentals of programming.**
 
-If you transferred from trumpet to horn, all of your ability to read and understand music would be directly applicable. In programming terms, by learning Javascript you've learned about variables, loops, conditional logic (if/else), functions, and more. Those concepts transfer _directly_ to the majority of all programming languages. Yes the syntax is a little different, but you've already learned the hard part: __how to think about, write, and structure programs.__
+If you transferred from trumpet to horn, all of your ability to read and understand music would be directly applicable. In programming terms, by learning Javascript you've learned about variables, loops, conditional logic (if/else), functions, and more. Those concepts transfer _directly_ to the majority of all programming languages. Yes the syntax is a little different, but you've already learned the hard part: **how to think about, write, and structure programs.**
 
 ## So again: just pick one.
 
@@ -90,7 +90,7 @@ I hope that this takes the pressure off of which programming language to pick. O
 
 In the end, the most important thing is to _just get started._ Just start learning&mdash;just start exposing yourself and familiarizing yourself with the tech world and programming in general.
 
-## *Caveats
+## \*Caveats
 
 I want to mention a couple caveats for the people like me who read this and still think, "ok, cool, but _seriously_ what's the _best one_ to pick? Surely we can get _a little_ closer to the mark out of the gate?"
 
@@ -98,7 +98,7 @@ So to those people: here are a few pointers.
 
 ### Pick a language that facilitates the type of work you want to do
 
-This seems fairly obvious, but, for example, if you want to make webapps: pick a language _that will let you write webapps_. There's nothing wrong with learning C or C++, but if you want to write webapps (and if you're just starting out [that's what I recommend]({{< ref "what-type-of-developer-are-you.md" >}})) pick a language that will let you do that. That means if you're wanting to make webapps, any of these things would be fine to choose: Ruby, Python, Javascript, PHP, C#/.NET, etc.
+This seems fairly obvious, but, for example, if you want to make webapps: pick a language _that will let you write webapps_. There's nothing wrong with learning C or C++, but if you want to write webapps (and if you're just starting out [that's what I recommend](/post/what-type-of-developer-are-you)) pick a language that will let you do that. That means if you're wanting to make webapps, any of these things would be fine to choose: Ruby, Python, Javascript, PHP, C#/.NET, etc.
 
 ### Pick a language that is popular in your area
 
@@ -132,7 +132,7 @@ The only thing I will say to that is this: no matter what, just make sure you're
 
 So that's the rub of how to pick a language. My wish for you would be to just jump in if you're sitting on the sidelines, and to keep the course if you're already moving. It'll take time, and it'll take hard work, but you will get there.
 
-If you've already picked a language and you're ready to get going, [here's what to do for your first projects.]({{< ref "types-of-projects.md" >}})
+If you've already picked a language and you're ready to get going, [here's what to do for your first projects.](/post/types-of-projects)
 
 Best of luck to you and feel free to reach out to me on twitter ([@johnmosesman](https://twitter.com/johnmosesman)) if you have any questions on this or any other topic around development.
 
