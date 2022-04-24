@@ -15,8 +15,9 @@ export default function ArticlePreview({
       rel="noopener"
     >
       <img
-        className="border-1 mb-2 rounded border border-gray-300"
+        className="border-1 mb-2 w-full rounded border border-gray-300 object-cover"
         src={thumbnailUrl}
+        style={{ maxHeight: "213px" }}
       />
       <p className="font-bold md:text-2xl md:font-semibold lg:text-lg">
         {title}

@@ -65,7 +65,7 @@ export default function App() {
         <Links />
       </head>
       <body className="p-6 md:mx-auto md:max-w-2xl lg:max-w-6xl">
-        <div className="mb-24 md:mb-36 lg:mb-24">
+        <div className="mb-12 md:mb-24">
           <Nav />
         </div>
 

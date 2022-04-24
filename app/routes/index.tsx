@@ -86,7 +86,7 @@ export default function Index() {
       </div>
 
       <a
-        className="md mb-12 block underline md:text-2xl lg:text-lg"
+        className="mb-12 block underline md:text-2xl lg:text-lg"
         href="https://www.youtube.com/channel/UCmRIxrzO2UlTOUC57HXxmCA"
       >
         View all videos
