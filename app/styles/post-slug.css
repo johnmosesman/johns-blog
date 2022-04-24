@@ -49,3 +49,8 @@
   font-size: 11px;
   white-space: pre-wrap;
 }
+
+.post-slug code {
+  font-size: 16px;
+  white-space: pre-wrap;
+}
