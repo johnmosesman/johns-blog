@@ -1,6 +1,35 @@
 import { Link } from "@remix-run/react";
 
+import { Article } from "../lib/types/article";
+import ArticlePreview from "../components/article-preview";
+
 export default function Index() {
+  let articles: Article[] = [
+    {
+      url: "https://www.freecodecamp.org/news/how-to-become-an-astounding-junior-developer/",
+      thumbnailUrl:
+        "/images/how-to-become-an-outstanding-junior-developer-thumbnail.jpeg",
+      title: "How to Become an Outstanding Junior Developer",
+      reads: "68.8k",
+      publishedDate: "July 22, 2020",
+    },
+    {
+      url: "https://www.freecodecamp.org/news/practical-git-and-git-workflows/",
+      thumbnailUrl: "/images/git-and-git-workflows-thumbnail.jpeg",
+      title: "How to Use Git and Git Workflows – a Practical Guide",
+      reads: "37.8k",
+      publishedDate: "April 1, 2021",
+    },
+    {
+      url: "https://www.freecodecamp.org/news/interviewing-prep-tips-and-tricks/",
+      thumbnailUrl: "/images/interview-tips-and-tricks-thumbnail.jpeg",
+      title:
+        "How to prepare for a technical interview - tips and tricks to help you perform your best",
+      reads: "20.3k",
+      publishedDate: "September 30, 2019",
+    },
+  ];
+
   return (
     <main className="flex flex-col">
       <div className="mb-12">
@@ -66,115 +95,10 @@ export default function Index() {
 
       <h3 className="mb-4 text-3xl">Writing Resources</h3>
 
-      <a
-        className="mb-8 block"
-        href="https://www.freecodecamp.org/news/how-to-become-an-astounding-junior-developer/"
-        target="_blank"
-        rel="noopener"
-      >
-        <img
-          className="border-1 mb-2 border border-gray-300"
-          src="/images/how-to-become-an-outstanding-junior-developer-thumbnail.jpeg"
-        />
-        <p className="font-bold">
-          How to Become an Outstanding Junior Developer
-        </p>
-        <p className="mb-2 text-sm text-gray-700">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="mr-1 inline-block h-4 w-4 text-gray-700"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-            />
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-            />
-          </svg>
-          68.8k &bull; July 22, 2020
-        </p>
-      </a>
-      <a
-        className="mb-8 block"
-        href="https://www.freecodecamp.org/news/how-to-become-an-astounding-junior-developer/"
-        target="_blank"
-        rel="noopener"
-      >
-        <img
-          className="border-1 mb-2 border border-gray-300"
-          src="/images/interview-tips-and-tricks-thumbnail.jpeg"
-        />
-        <p className="font-bold">
-          How to prepare for a technical interview - tips and tricks to help you
-          perform your best
-        </p>
-        <p className="mb-2 text-sm text-gray-700">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="mr-1 inline-block h-4 w-4 text-gray-700"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-            />
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-            />
-          </svg>
-          20.3k &bull; September 30, 2019
-        </p>
-      </a>
-      <a
-        className="mb-4 block"
-        href="https://www.freecodecamp.org/news/practical-git-and-git-workflows/"
-        target="_blank"
-        rel="noopener"
-      >
-        <img
-          className="border-1 mb-2 border border-gray-300"
-          src="/images/git-and-git-workflows-thumbnail.jpeg"
-        />
-        <p className="font-bold">
-          How to Use Git and Git Workflows – a Practical Guide
-        </p>
-        <p className="mb-2 text-sm text-gray-700">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="mr-1 inline-block h-4 w-4 text-gray-700"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-            />
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-            />
-          </svg>
-          37.8k &bull; April 1, 2021
-        </p>
-      </a>
+      {articles.map((article, index) => {
+        return <ArticlePreview key={index} {...article} />;
+      })}
+
       <Link className="mb-12 block underline" to="writings">
         View all writings
       </Link>
