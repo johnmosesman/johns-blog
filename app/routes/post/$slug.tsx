@@ -1,10 +1,7 @@
 import type { LoaderFunction } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
-import { marked } from "marked";
-import matter, { GrayMatterFile } from "gray-matter";
-import toml from "toml";
-import fs from "fs";
-const fsPromises = fs.promises;
+
+import { buildMarkdownFile, MarkdownFile } from "~/lib/markdown";
 
 import styles from "~/styles/post-slug.css";
 
@@ -12,45 +9,10 @@ export function links() {
   return [{ rel: "stylesheet", href: styles }];
 }
 
-// @ts-ignore
-import strftime from "strftime";
-
-interface MarkdownFile {
-  slug: string;
-  title: string;
-  date: string;
-  html: string;
-}
-
-const buildMarkdownFile = async (
-  directory: string,
-  fileName: string
-): Promise<MarkdownFile> => {
-  const file = await fsPromises.readFile(`${directory}/${fileName}`, "utf8");
-
-  let parsedData: GrayMatterFile<string> = matter(file, {
-    delimiters: "+++",
-    language: "toml",
-    engines: {
-      toml: toml.parse.bind(toml),
-    },
-  });
-
-  return {
-    slug: fileName.replace(".md", ""),
-    title: parsedData.data.title,
-    date: strftime("%B %e, %Y", new Date(parsedData.data.date)),
-    html: marked(parsedData.content),
-  };
-};
-
 export const loader: LoaderFunction = async ({
   params,
 }): Promise<MarkdownFile> => {
-  let directory: string = "app/legacy/post";
-
   let markdownFile: MarkdownFile = await buildMarkdownFile(
-    directory,
     `${params.slug}.md` || ""
   );
 
