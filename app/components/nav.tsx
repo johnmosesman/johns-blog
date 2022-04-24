@@ -3,18 +3,19 @@ import { Link } from "@remix-run/react";
 export default function Nav() {
   return (
     <div className="flex flex-row items-center justify-between">
-      <Link className="site-logo" to="/">
+      <Link className="site-logo md:text-xl" to="/">
         JM
       </Link>
 
       <div className="flex flex-row items-center">
         <a
+          className="mr-3 md:mr-4"
           href="https://twitter.com/johnmosesman"
           target="_blank"
           rel="noopener"
         >
           <svg
-            className="mr-3 h-4 w-4 fill-current stroke-current text-gray-600"
+            className="h-4 w-4 fill-current stroke-current text-gray-600 md:h-6 md:w-6 md:text-gray-400"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -29,7 +30,7 @@ export default function Nav() {
           rel="noopener"
         >
           <svg
-            className="h-4 w-4 fill-current stroke-current text-gray-600"
+            className="h-4 w-4 fill-current stroke-current text-gray-600 md:h-6 md:w-6 md:text-gray-400"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >

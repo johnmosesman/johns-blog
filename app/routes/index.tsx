@@ -59,7 +59,7 @@ export default function Index() {
 
   return (
     <main className="flex flex-col ">
-      <div className="mb-12 md:mb-24">
+      <div className="mb-12 md:mb-20">
         <h1 className="mb-2 text-3xl md:mb-4 md:text-5xl">
           Hi, I'm John Mosesman
         </h1>
