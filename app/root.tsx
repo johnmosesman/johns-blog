@@ -5,7 +5,6 @@ import type {
 } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import {
-  Link,
   Links,
   LiveReload,
   Meta,
@@ -17,6 +16,8 @@ import {
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import baseStylesheetUrl from "./styles/base.css";
 import { getUser } from "./session.server";
+
+import Nav from "app/components/nav";
 
 export const links: LinksFunction = () => {
   return [
@@ -64,13 +65,16 @@ export default function App() {
         <Links />
       </head>
       <body className="p-6">
-        <div className="mb-16">
-          <Link className="site-logo" to="/">
-            JM
-          </Link>
+        <div className="mb-12">
+          <Nav />
         </div>
 
-        <Outlet />
+        <div className="mb-12">
+          <Outlet />
+        </div>
+
+        <Nav />
+
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

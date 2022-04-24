@@ -46,4 +46,6 @@
   padding: 12px;
   background-color: #efefef;
   margin: 16px 0px;
+  font-size: 11px;
+  white-space: pre-wrap;
 }
