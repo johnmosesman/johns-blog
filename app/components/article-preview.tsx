@@ -8,13 +8,20 @@ export default function ArticlePreview({
   publishedDate,
 }: Article) {
   return (
-    <a className="mb-8 block" href={url} target="_blank" rel="noopener">
+    <a
+      className="mb-8 block md:mb-12 lg:max-w-xs"
+      href={url}
+      target="_blank"
+      rel="noopener"
+    >
       <img
-        className="border-1 mb-2 border border-gray-300"
+        className="border-1 mb-2 rounded border border-gray-300"
         src={thumbnailUrl}
       />
-      <p className="font-bold md:text-2xl md:font-semibold">{title}</p>
-      <p className="mb-2 flex flex-row items-center text-sm text-gray-700 md:text-lg">
+      <p className="font-bold md:text-2xl md:font-semibold lg:text-lg">
+        {title}
+      </p>
+      <div className="mb-2 flex flex-row items-center text-sm text-gray-700 md:text-lg ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="mr-1 inline-block h-4 w-4 text-gray-700"
@@ -34,10 +41,10 @@ export default function ArticlePreview({
             d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
           />
         </svg>
-        <p className="md:text-lg">
+        <p className="md:text-lg lg:text-sm">
           {reads} &bull; {publishedDate}{" "}
         </p>
-      </p>
+      </div>
     </a>
   );
 }

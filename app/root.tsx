@@ -64,8 +64,8 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="p-6 md:mx-auto md:max-w-2xl">
-        <div className="mb-24 md:mb-36">
+      <body className="p-6 md:mx-auto md:max-w-2xl lg:max-w-6xl">
+        <div className="mb-24 md:mb-36 lg:mb-24">
           <Nav />
         </div>
 

@@ -79,12 +79,14 @@ export default function Index() {
 
       <h3 className="mb-4 text-2xl md:mb-8 md:text-3xl">Video Resources</h3>
 
-      {videos.map((video, index) => {
-        return <VideoPreview key={index} {...video} />;
-      })}
+      <div className="lg:grid lg:grid-cols-3">
+        {videos.map((video, index) => {
+          return <VideoPreview key={index} {...video} />;
+        })}
+      </div>
 
       <a
-        className="mb-12 block underline md:text-xl"
+        className="md mb-12 block underline md:text-2xl lg:text-lg"
         href="https://www.youtube.com/channel/UCmRIxrzO2UlTOUC57HXxmCA"
       >
         View all videos
@@ -94,11 +96,16 @@ export default function Index() {
         Writing Resources
       </h3>
 
-      {articles.map((article, index) => {
-        return <ArticlePreview key={index} {...article} />;
-      })}
+      <div className="lg:grid lg:grid-cols-3">
+        {articles.map((article, index) => {
+          return <ArticlePreview key={index} {...article} />;
+        })}
+      </div>
 
-      <Link className="mb-12 block underline md:text-xl" to="writings">
+      <Link
+        className="mb-12 block underline md:text-2xl lg:text-lg"
+        to="writings"
+      >
         View all writings
       </Link>
     </main>
