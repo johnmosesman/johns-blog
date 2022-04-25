@@ -1,7 +1,7 @@
 import { Link } from "@remix-run/react";
 
-import { Article } from "../lib/types/article";
-import { Video } from "../lib/types/video";
+import { type Article } from "../lib/types/article";
+import { type Video } from "../lib/types/video";
 
 import ArticlePreview from "../components/article-preview";
 import VideoPreview from "~/components/video-preview";

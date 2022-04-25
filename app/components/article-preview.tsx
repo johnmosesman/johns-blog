@@ -1,4 +1,4 @@
-import { Article } from "../lib/types/article";
+import type { Article } from "../lib/types/article";
 
 export default function ArticlePreview({
   url,
@@ -12,12 +12,13 @@ export default function ArticlePreview({
       className="mb-8 block md:mb-12 lg:max-w-xs"
       href={url}
       target="_blank"
-      rel="noopener"
+      rel="noreferrer"
     >
       <img
         className="border-1 mb-2 w-full rounded border border-gray-300 object-cover md:mb-4"
         src={thumbnailUrl}
         style={{ maxHeight: "213px" }}
+        alt="Thumbnail"
       />
       <p className="md:text-2xl lg:text-lg">{title}</p>
       <div className="mb-2 flex flex-row items-center text-sm text-gray-500 md:text-lg ">

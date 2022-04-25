@@ -1,7 +1,7 @@
 import type { LoaderFunction } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 
-import { buildMarkdownFile, MarkdownFile } from "~/lib/markdown";
+import { buildMarkdownFile, type MarkdownFile } from "~/lib/markdown";
 
 import styles from "~/styles/post-slug.css";
 

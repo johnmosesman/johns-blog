@@ -1,9 +1,8 @@
 import { marked } from "marked";
-import matter, { GrayMatterFile } from "gray-matter";
+import matter, { type GrayMatterFile } from "gray-matter";
 import toml from "toml";
 
 import fs from "fs";
-const fsPromises = fs.promises;
 
 // @ts-ignore
 import strftime from "strftime";
@@ -15,6 +14,7 @@ export interface MarkdownFile {
   html: string;
 }
 
+const fsPromises = fs.promises;
 const directoryPath: string = "app/legacy/post";
 
 export const buildMarkdownFile = async (

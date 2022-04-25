@@ -12,7 +12,7 @@ export default function Nav() {
           className="mr-3 md:mr-4"
           href="https://twitter.com/johnmosesman"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <svg
             className="h-4 w-4 fill-current stroke-current text-gray-600 md:h-6 md:w-6 md:text-gray-400"
@@ -27,7 +27,7 @@ export default function Nav() {
         <a
           href="https://github.com/johnmosesman"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <svg
             className="h-4 w-4 fill-current stroke-current text-gray-600 md:h-6 md:w-6 md:text-gray-400"

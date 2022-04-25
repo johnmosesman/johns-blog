@@ -1,7 +1,7 @@
 import type { LoaderFunction } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 
-import { buildMarkdownFiles, MarkdownFile } from "~/lib/markdown";
+import { buildMarkdownFiles, type MarkdownFile } from "~/lib/markdown";
 
 export const loader: LoaderFunction = async (): Promise<MarkdownFile[]> => {
   return await buildMarkdownFiles();
