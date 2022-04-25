@@ -34,8 +34,8 @@ export default function Writings() {
       {markdownFiles.map((post: MarkdownFile, index: number) => {
         return (
           <Link to={`/post/${post.slug}`} className="mb-6" key={index}>
-            <p className="font-semibold md:text-xl">{post.title}</p>
-            <p className="text-sm text-gray-700 md:text-lg">{post.date}</p>
+            <p className="md:text-xl">{post.title}</p>
+            <p className="text-sm text-gray-500 md:text-lg">{post.date}</p>
           </Link>
         );
       })}

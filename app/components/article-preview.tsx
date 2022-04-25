@@ -15,17 +15,15 @@ export default function ArticlePreview({
       rel="noopener"
     >
       <img
-        className="border-1 mb-2 w-full rounded border border-gray-300 object-cover"
+        className="border-1 mb-2 w-full rounded border border-gray-300 object-cover md:mb-4"
         src={thumbnailUrl}
         style={{ maxHeight: "213px" }}
       />
-      <p className="font-bold md:text-2xl md:font-semibold lg:text-lg">
-        {title}
-      </p>
-      <div className="mb-2 flex flex-row items-center text-sm text-gray-700 md:text-lg ">
+      <p className="md:text-2xl lg:text-lg">{title}</p>
+      <div className="mb-2 flex flex-row items-center text-sm text-gray-500 md:text-lg ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="mr-1 inline-block h-4 w-4 text-gray-700"
+          className="mr-1 inline-block h-4 w-4 text-gray-500"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

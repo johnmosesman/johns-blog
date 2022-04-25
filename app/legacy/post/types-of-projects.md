@@ -29,7 +29,7 @@ A list of side projects show you have a foundation and baseline of knowledge and
 
 So with that in mind, what types of projects should we focus on?
 
-# CRUD apps
+## CRUD apps
 
 A CRUD app is both a descriptor of the type and quality (pun) of the first apps you should make.
 
