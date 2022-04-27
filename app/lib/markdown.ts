@@ -15,15 +15,19 @@ export interface MarkdownFile {
 }
 
 const fsPromises = fs.promises;
-const directoryPath: string = "app/legacy/post";
 
 export const buildMarkdownFile = async (
+  directoryPath: string,
   fileName: string
 ): Promise<MarkdownFile> => {
+  console.log("asdf", directoryPath, fileName);
+
   const file = await fsPromises.readFile(
     `${directoryPath}/${fileName}`,
     "utf8"
   );
+
+  console.log("after");
 
   let parsedData: GrayMatterFile<string> = matter(file, {
     delimiters: "+++",
@@ -41,7 +45,9 @@ export const buildMarkdownFile = async (
   };
 };
 
-export const buildMarkdownFiles = async (): Promise<MarkdownFile[]> => {
+export const buildMarkdownFiles = async (
+  directoryPath: string
+): Promise<MarkdownFile[]> => {
   let fileNames: string[] = await fsPromises.readdir(directoryPath);
 
   let data: MarkdownFile[] = await Promise.all(
@@ -49,7 +55,7 @@ export const buildMarkdownFiles = async (): Promise<MarkdownFile[]> => {
       .filter((fileName: string): boolean => fileName.includes(".md"))
       .map(
         async (fileName: string): Promise<MarkdownFile> =>
-          buildMarkdownFile(fileName)
+          buildMarkdownFile(directoryPath, fileName)
       )
   );
 

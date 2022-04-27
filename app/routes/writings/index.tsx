@@ -4,7 +4,7 @@ import { Link, useLoaderData } from "@remix-run/react";
 import { buildMarkdownFiles, type MarkdownFile } from "~/lib/markdown";
 
 export const loader: LoaderFunction = async (): Promise<MarkdownFile[]> => {
-  return await buildMarkdownFiles();
+  return await buildMarkdownFiles("app/legacy/post");
 };
 
 export default function Writings() {
