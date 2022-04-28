@@ -133,7 +133,9 @@ A useful technology is great, but if that technology doesn’t functionally work
 
 Asking whether a particular blockchain or some of the blockchain systems will succeed in the long term is likely just speculation, but the overall story seems good. Each year blockchain adoption increases quite drastically in both the number of people using these systems and the amount of money entering and circulating in these systems—two factors that are to me very positive factors in that story.
 
-One story in particular to me is the recent Ethereum upgrade to [EIP-1559.](https://eips.ethereum.org/EIPS/eip-1559)
+### EIP-1559
+
+One story that stands out to me in particular is the recent Ethereum upgrade to [EIP-1559.](https://eips.ethereum.org/EIPS/eip-1559)
 
 For those not familiar with the upgrade, this proposal changed the way in which transaction fees were paid and used in a transaction. The proposal was a large change: it took almost two years of planning, required miners of the network to coordinate and update their systems—which is no small feat in a large, distributed network—and it went off without a hitch.
 
@@ -235,7 +237,7 @@ What does that $1.5M get them? A ticket to a social group they find elite and va
 
 ![NFT generative tree](/images/a-practical-take-on-web3/generative-tree-min.png)
 
-### Programmable identity
+### NFTs: Programmable identity
 
 When a new tech arrives, people build and cling to what they know. It takes some time for the truly innovative and next-gen applications to arise.
 
@@ -255,7 +257,7 @@ I’m not really into trading jpgs, but this programmable identity aspect is rea
 
 As an example, I recently saw this [generative tree/seed piece of art NFT](https://twitter.com/yungwknd/status/1477359562088849413?s=12). The owner of the NFT can decide how many “offspring” trees to generate—or not generate. The collection and artwork evolves based on the owners actions.
 
-Things like that are only the beginning.
+I find ideas like really cool, and it's only just the beginning.
 
 ## There’s a lot of people in crypto
 
@@ -269,7 +271,7 @@ You will see a lot of extreme takes in crypto—from the “overthrow the govern
 
 One person or one subset doesn’t define the whole. Every possible motivation will be present—as in any other area of life.
 
-## Energy
+### Energy
 
 One underrated aspect of web3 culture is the energy. People are truly excited to be a part of and working in web3.
 
@@ -277,7 +279,7 @@ I originally underestimated the power of this energy. It’s infectious, and it 
 
 The web3 space also has adopted an almost silly aspect to its culture. Memes reign supreme. Even the design of many of the web3 products and companies has more freedom and expression from the standard web2 marketing pages. It’s a refreshing change.
 
-## Asymmetric upside
+### Asymmetric upside
 
 Finally, I think there’s one final point that many developers today are missing.
 
@@ -289,7 +291,7 @@ I wondered if there were developers who saw the rise of the internet and apps an
 
 I don’t want to be that person for web3.
 
-## I could be totally wrong
+### I could be totally wrong
 
 I could be totally wrong. I could be wrong about the utility, the ability for these communities to succeed, or just the overall impact this technology will make.
 

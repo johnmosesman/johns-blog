@@ -24,7 +24,7 @@ export default function PostSlug() {
   const markdownFile: MarkdownFile = useLoaderData();
 
   return (
-    <main className="">
+    <main className="lg:mx-auto lg:max-w-3xl">
       <Link to="/writings" className="mb-2 flex flex-row items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
