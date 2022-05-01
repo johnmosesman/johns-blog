@@ -12,13 +12,11 @@ export function links() {
 export const loader: LoaderFunction = async ({
   params,
 }): Promise<MarkdownFile> => {
-  console.log("p", params);
   let markdownFile: MarkdownFile = await buildMarkdownFile(
     "app/lib/posts",
     `${params.slug}.md` || ""
   );
 
-  console.log("boop", markdownFile);
   return markdownFile;
 };
 

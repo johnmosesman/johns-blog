@@ -20,14 +20,10 @@ export const buildMarkdownFile = async (
   directoryPath: string,
   fileName: string
 ): Promise<MarkdownFile> => {
-  console.log("asdf", directoryPath, fileName);
-
   const file = await fsPromises.readFile(
     `${directoryPath}/${fileName}`,
     "utf8"
   );
-
-  console.log("after");
 
   let parsedData: GrayMatterFile<string> = matter(file, {
     delimiters: "+++",
