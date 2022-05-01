@@ -50,9 +50,9 @@ The little green lock icon in the browser assures us that we’re buying from th
 
 Our banks’ records are the source of what transactions took place, and our legal system acts as the arbiter and final decision on disputes.
 
-We trust these entities because they have significant power to squash imposters and right-the-wrongs, or because we have [built a system](https://en.wikipedia.org/wiki/Certificate_authority) that entrusts these large, powerful sources of truth to correctly vouch for the authenticity of an entity.
+We trust these entities because they have significant power to squash imposters and right-the-wrongs. We have [built a system](https://en.wikipedia.org/wiki/Certificate_authority) that entrusts these large, powerful sources of truth to correctly vouch for the authenticity of an entity.
 
-This centralized system works pretty well—or at least we haven’t had much of an option to use anything different for quite a well. That is, until now.
+This centralized system works pretty well—or at least we haven’t had much of an option to use anything different for quite a while. That is, until now.
 
 <div class="section-spacer"></div>
 
@@ -68,25 +68,23 @@ But how can you trust someone _is_ who they say they are _without_ using a trust
 
 > Alice: “Hey it’s me, Alice, and Bob said I can have all his money k thx.” <br>— Not something Bob said and also not Alice
 
+The answer, is math (or cryptography).
+
 ### Distributing consensus
 
 In a distributed peer-to-peer network there is no central authority to validate the authenticity of communications. Peers within the network broadcast information to all other peers.
 
 Imagine today if anyone could make _any_ financial transaction they wanted _at any time._ A nightmare, right?
 
-The creator(s) of Bitcoin solved this problem via [Nakamoto Consensus](https://coinmarketcap.com/alexandria/article/what-is-the-nakamoto-consensus).
+The creator(s) of Bitcoin solved this problem via [Nakamoto Consensus](https://coinmarketcap.com/alexandria/article/what-is-the-nakamoto-consensus). This consensus algorithm introduced what we know today as **proof of work—or “mining.”**
 
-To simplify things a bit: to keep people from cheating, make the cost of cheating more expensive than the reward.
+To contribute to the network, miners have to expend computation resources (energy from electricity and wear-and-tear on their hardware) to solve difficult cryptographic math puzzles. Solve the puzzle first and you win the right to submit and confirm a group of transactions (or _block_) and receive the reward for doing said work (i.e., in the Bitcoin network you earn a few Bitcoin).
 
-This consensus algorithm introduced what we know today as **proof of work—or “mining.”**
+These new transactions are then propagated to all other nodes in the network where they are cryptographically verified—and if correct—each peer in the system in turn updates their internal state to match the new system state.
 
-To contribute to the network, miners have to expend computation resources (energy from electricity and wear-and-tear on their hardware) to solve a difficult cryptographic math puzzles.
+This is obviously a simplified view, but the important point is that this distributed consensus method removes the need for a trusted third-party.
 
-Solve the puzzle first and you win the right to submit and confirm a group of transactions (or _block_) and receive the reward for doing said work (i.e., in the Bitcoin network you earn a few Bitcoin). These new transactions are propagated to all other nodes in the network, and they in turn update their internal state to match.
-
-I’m skipping over a lot of important cryptography here (that I’m not knowledgeable enough to talk about in detail) that ensures miners behave honestly—and methods to correct things if they aren’t—but the important point is that this distributed consensus method removes the need for a trusted third-party and the security and stability of the network grows with each new participant.
-
-(Participants in the network are also incentivized to act honestly and continue supporting the network via one of the most powerful incentives out there—_getting paid._)
+Also, the security and stability of the network grows with each new honest participant verifying the network's transactions. Participants in the network are also incentivized to act honestly and continue supporting the network via one of the most powerful incentives out there—_getting paid._
 
 ### Ownership
 
@@ -98,7 +96,7 @@ There may be consequences for these actions, but there’s very little you or I 
 
 We have access to these systems, but we don’t inherently own the data.
 
-Contrast this with a distributed ledger.
+Contrast this with a distributed ledger:
 
 If a distributed ledger shows that you own some thing *X—*and no actor or group of actors can alter the ledger to remove that thing from you—you truly do own that thing.
 
@@ -131,23 +129,25 @@ If we have a useful technology, will it succeed?
 
 A useful technology is great, but if that technology doesn’t functionally work, isn’t able to adapt and evolve, or never reaches wide enough distribution in the market, it in effect is not useful.
 
-Asking whether a particular blockchain or some of the blockchain systems will succeed in the long term is likely just speculation, but the overall story seems good. Each year blockchain adoption increases quite drastically in both the number of people using these systems and the amount of money entering and circulating in these systems—two factors that are to me very positive factors in that story.
+Asking whether a particular blockchain or some of the blockchain systems will succeed in the long term is likely just speculation, but the overall story seems good. Metrics like [transactions](https://etherscan.io/chart/tx) and [active addresses](https://etherscan.io/chart/active-address) are "up and to the right."
+
+A study from the University of Chicago found that <i>["more than 1 in 10 Americans invested in cryptocurrency over the past year."](https://www.cnbc.com/2021/07/23/13percent-of-americans-traded-crypto-in-the-past-year-survey-finds.html)</i>
+
+![Cryptofees](/images/a-practical-take-on-web3/crypofees-min.png)
+
+The amount of [revenue](https://cryptofees.info/) being generated from the various blockchains and projects within them is also no small amount either.
+
+Anecdotally, it also seems like the number of crypto companies and investments are ever-increasing as well—and while these metrics in and of themselves don't prove success, they are very positive factors.
 
 ### EIP-1559
 
 One story that stands out to me in particular is the recent Ethereum upgrade to [EIP-1559.](https://eips.ethereum.org/EIPS/eip-1559)
 
-For those not familiar with the upgrade, this proposal changed the way in which transaction fees were paid and used in a transaction. The proposal was a large change: it took almost two years of planning, required miners of the network to coordinate and update their systems—which is no small feat in a large, distributed network—and it went off without a hitch.
+For those not familiar with the upgrade, this proposal changed the way in which transaction fees were paid and used in a transaction.
 
-To me, a successful change like this on the largest blockchain network next to Bitcoin is a very positive sign of this ecosystem succeeding.
+The proposal was a large change: it took almost two years of planning, required miners of the network to coordinate and update their systems—which is no small feat in a large, distributed network—and it went off without a hitch.
 
-![Cryptofees](/images/a-practical-take-on-web3/crypofees-min.png)
-
-### Increased usage
-
-The amount of [fee revenue](https://cryptofees.info/) being generated from the various blockchains and projects within them is also no small amount. And also anecdotally from my observations, the amount of blockchains, communities, projects, and funding entering this space is accelerating every day.
-
-All in all, these factors don’t equal success, but they are all signs in the right direction.
+To me, a successful change like this on the largest smart contract network (and largest network next to Bitcoin) is a very positive sign for this ecosystem succeeding.
 
 ## Valid criticisms
 
@@ -171,17 +171,17 @@ The fact of the matter is that we rely too much on shared services (internet, el
 
 In reality, cryptocurrencies becoming more popular likely means the governments will tax these innovations and put some regulations in place. How much, when, and how? No one knows, but I would bet that our governments are neither overthrown nor squash crypto entirely, but adapt to it and make a ton of tax money off of it.
 
-Crypto may allow us to claw back a little bit of agency and power within certain systems, but I find it very unlikely that it topples our financial systems.
+Crypto may allow us to claw back agency and power within certain systems, but I find it very unlikely that it topples our financial systems.
 
 ### Take 2: Environmental/energy usage
 
-One of the main criticisms about cryptocurrency is the energy usage it requires to keep a blockchain active. This is related to the previously-described consensus algorithm which requires computers to solve computationally-expensive equations in order to win the right to mine the next block.
+One of the main criticisms about cryptocurrency is the energy usage it requires to keep a blockchain active. This is related to the previously described proof-of-work consensus algorithm which requires computers to solve computationally-expensive equations in order to win the right to mine the next block.
 
 These two passages from the HBR article [_“How Much Energy Does Bitcoin Actually Consume?”_](https://hbr.org/2021/05/how-much-energy-does-bitcoin-actually-consume) offer some opposing viewpoints:
 
-> [Bitcoin currently consumes](https://cbeci.org/) around 110 Terawatt Hours per year — 0.55% of global electricity production, or roughly equivalent to the annual energy draw of small countries like Malaysia or Sweden. This certainly sounds like a lot of energy. But how much energy *should* a monetary system consume?
+> Bitcoin currently consumes around 110 Terawatt Hours per year — 0.55% of global electricity production, or roughly equivalent to the annual energy draw of small countries like Malaysia or Sweden. This certainly sounds like a lot of energy. But how much energy *should* a monetary system consume?
 
-> How you answer that likely depends on how you feel about Bitcoin. If you believe that Bitcoin offers no utility beyond serving as a [ponzi scheme](https://www.cnbc.com/2021/04/23/bitcoin-a-gimmick-and-resembles-a-ponzi-scheme-black-swan-author-.html) or a device for [money laundering](https://www.cnbc.com/2021/02/22/yellen-sounds-warning-about-extremely-inefficient-bitcoin.html), then it would only be logical to conclude that consuming any amount of energy is wasteful. If you are one of the [tens of millions](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/3rd-global-cryptoasset-benchmarking-study/) of individuals [worldwide](https://blog.chainalysis.com/reports/2020-global-cryptocurrency-adoption-index-2020) using it as a tool to escape [monetary repression](https://time.com/5486673/bitcoin-venezuela-authoritarian/), [inflation](https://www.rollcall.com/2019/09/10/venezuelans-use-cryptocurrency-to-bypass-corruption-inflation/), or [capital controls](https://www.scmp.com/economy/china-economy/article/3098981/cryptocurrencies-help-chinese-evade-capital-and-currency), you most likely think that the energy is extremely well spent.
+> How you answer that likely depends on how you feel about Bitcoin. If you believe that Bitcoin offers no utility beyond serving as a ponzi scheme or a device for money laundering, then it would only be logical to conclude that consuming any amount of energy is wasteful. If you are one of the tens of millions of individuals worldwide using it as a tool to escape monetary repression, inflation, or capital controls, you most likely think that the energy is extremely well spent.
 
 In the article, that last paragraph ends with this sentence which I think sums it up well:
 
@@ -201,15 +201,15 @@ And while the cost of Bitcoin is significant (and the article also brings up oth
 
 ### Proof of Stake
 
-One of the best solutions to the energy problem is already in play, and that is a newer consensus algorithm known as **proof-of-stake.**
+One of the best solutions to the energy problem is already in play, and that is a newer consensus algorithm known as **proof of stake.**
 
-Instead of the proof-of-work method of solving an energy-intensive math puzzle, proof-of-stake networks have their “miners” (often called **validators**) put up a large stack of collateral (usually the native token of the network) which can be slashed (taken away) if the validator behaves incorrectly. Malicious or incorrect behavior means losing cash—so it is a powerful incentive.
+Instead of the proof of work method of solving an energy-intensive math puzzle, proof of stake networks have their “miners” (often called **validators**) put up a large stack of collateral (usually the native token of the network) which can be slashed (taken away) if the validator behaves incorrectly. Malicious or incorrect behavior means losing cash—so it is a powerful incentive.
 
-By removing this heavy computational component the energy use of the network is reduced dramatically.
+Removing the heavy computation component in the consensus algorithm reduces the energy use of the network dramatically.
 
-Ethereum currently uses proof of work, but has been planning and rolling out a proof of stake mechanism for quite some time now, and it is rumored to go live later this year. At that point, the energy usage of Ethereum is said to [drop by 99%.](https://blog.ethereum.org/2021/05/18/country-power-no-more/)
+Ethereum currently uses proof of work, but it has been planning and rolling out a proof of stake mechanism for quite some time now, and it is believed to go live later this year. At that point, the energy usage of Ethereum is said to [drop by 99%.](https://blog.ethereum.org/2021/05/18/country-power-no-more/)
 
-(Although Bitcoin, the largest energy user, has no plans to move away from proof-of-work.)
+(Although as of now Bitcoin, the largest energy consumer, has no plans to move away from proof of work.)
 
 ### Take 3: Scams/ponzis/hacks
 
@@ -217,7 +217,7 @@ Right out of the gate: there are _definitely_ lots of scams, ponzis, and hacks w
 
 There are also a countless number of these things outside of cryptocurrency. If we banned every technology that facilitates scams we’d have no technology.
 
-Over time and as the space matures, I do think the number of scams will decrease. There will always be scams, but it’s easy to scam people who are undereducated about the underlying technology and don’t yet have good patterns to use to identify scams versus legitimate projects.
+Over time and as the space matures, I do think the number of scams will decrease. There will always be scams, but it’s easy to scam people who are undereducated about the underlying technology and don’t yet have good patterns and tools to use to identify scams versus legitimate projects.
 
 Another aspect to keep in mind is blockchains are completely open and public data. You can watch and analyze every transaction that happens on-chain.
 
@@ -227,11 +227,11 @@ How many scams and hacks do you think we would find if we could see every financ
 
 By now everyone knows the word NFT. Thinking of this word might conjure images of monkeys [selling for millions of dollars](https://opensea.io/assets/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/2087)—and that seems crazy. And you know what? It is kind of is crazy.
 
-(Although most of the prominent people in the NFT space have been saying for quite a while that this is in fact a bubble and most NFTs will go to $0.)
+(Although most of the prominent people in the NFT space have been saying for quite a while that this is in fact a bubble and [most NFTs will go to $0.](https://observer.com/2021/06/coinbase-cofounder-warn-nfts-worthless-interview/))
 
 On one hand you might attribute this to money laundering, greed, or something else—and there’s probably some truth to those—but on the other hand we see predictable patterns of traders, collectors, communities, and status games.
 
-Is a monkey picture really worth $1.5M? It is if someone is willing to pay that price. I might disagree, you might disagree, but for whatever reason—right or wrong—someone is willing to pay that price, and I for one don’t think it’s my place to stop them.
+Is a monkey picture really worth $1.5M? It is if someone is willing to pay that price. I might disagree, you might disagree, but for whatever reason—right or wrong—someone is willing to pay it.
 
 What does that $1.5M get them? A ticket to a social group they find elite and valuable? A speculative trade they might profit off of? Some artwork they like?
 
@@ -245,9 +245,9 @@ When a new tech arrives, people build and cling to what they know. It takes some
 
 After cryptocurrencies were created what’s the first thing we built? Trading.
 
-Right now NFTs are going through the same thing. Some people see them as art, some see them as membership to a status club, or maybe just a collector’s item to be traded—and that’s fine.
+Right now NFTs are going through the same thing. Some people see them as art, some see them as membership to a status club or maybe just a collector’s item to be traded—and that’s fine.
 
-I think there’s an underutilized aspect of NFTs that I don’t see many people using, and that’s _programmable identity._
+I think there’s an underutilized aspect of NFTs that I don’t see many people using: _programmable identity._
 
 NFTs are unique by definition (”non-fungible” token). They’re also software objects that can be manipulated through code.
 
@@ -265,7 +265,7 @@ There’s a lot of people in crypto. As it spreads globally it picks up global d
 
 Some want to scam. Some want to make quick money off of others (but not as a scam). Some want to build. Some want to overthrow. Some want to belong.
 
-I could go on and on about different takes and positions without the crypto world, but ultimately I think the important thing to realize is everyone has a motive (good or bad) and everyone has bias.
+I could go on and on about different takes and positions within the crypto world, but ultimately I think the important thing to realize is everyone has a motive (good or bad)—and everyone has bias.
 
 You will see a lot of extreme takes in crypto—from the “overthrow the government” to the “everything will become an NFT.”
 
@@ -277,17 +277,19 @@ One underrated aspect of web3 culture is the energy. People are truly excited to
 
 I originally underestimated the power of this energy. It’s infectious, and it brings enthusiasm to those who are learning and building in the space.
 
-The web3 space also has adopted an almost silly aspect to its culture. Memes reign supreme. Even the design of many of the web3 products and companies has more freedom and expression from the standard web2 marketing pages. It’s a refreshing change.
+The web3 space also has adopted an almost silly aspect to its culture. Memes reign supreme.
+
+Even the [design](https://curve.fi/) [of](https://abracadabra.money/) [many](https://www.convexfinance.com/) [of](https://www.sushi.com/) [the](https://sarcophagus.io/) [web3](https://moonwell.fi/) products and companies has more freedom and expression from the standard web2 marketing pages. It’s a refreshing change.
 
 ### Asymmetric upside
 
 Finally, I think there’s one final point that many developers today are missing.
 
-If you are a developer now or looking to become one, I think there is great asymmetric upside to diving into web3 now.
+If you are a developer now or looking to become one, I think there is _asymmetric upside_ to diving into web3 right now.
 
-In fact, one of the reasons I gave web3 a chance was because I didn’t want to look back twenty years from now and say that I was on the edge of the next technological revolution, and I missed it.
+If you're right, you get to ride the next wave of technological advancement. If you're wrong, you learned a few new skills that may or not be useful, but the odds are thinking and working in distributed systems will at a minimum be useful time spent.
 
-I wondered if there were developers who saw the rise of the internet and apps and ignored it—or thought it would never succeed, or wonder how it could ever be useful.
+In fact, one of the reasons I gave web3 a chance was because I didn’t want to look back twenty years from now and say that I was on the edge of the next technological revolution—and I missed it. I wondered if there were developers who saw the rise of the internet and apps and ignored it, or thought it would never succeed, or wondered how it could ever be useful.
 
 I don’t want to be that person for web3.
 
@@ -301,8 +303,8 @@ Or maybe crypto peters out and a few years from now I’m back in the web2 world
 
 If that happens, I will be happy to admit I was wrong.
 
-But overall, I’ve seen enough to commit to this thing for the time being.
-
-web3 seems like a risk well-worth taking, and with very little downside.
+But overall, I’ve seen enough to commit to this thing for the time being. Web3 seems like a risk well-worth taking, and with very little downside.
 
 In the worst case, I’ll have made some new friends and web2 will be waiting for me again.
+
+Thanks for reading. If you have questions or comments feel free to [reach out to me on Twitter.](https://twitter.com/johnmosesman)
