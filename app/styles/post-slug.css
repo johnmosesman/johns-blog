@@ -3,14 +3,20 @@
 }
 
 .post-slug img {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin: 36px auto 12px;
+  border-radius: 3px;
 }
 
 .post-slug ul {
   margin-bottom: 12px;
   margin-left: 32px;
   list-style-type: disc;
+}
+
+.post-slug ol {
+  margin-bottom: 12px;
+  margin-left: 32px;
+  list-style-type: auto;
 }
 
 .post-slug li {
@@ -27,18 +33,22 @@
 
 .post-slug hr {
   margin-top: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .post-slug h2 {
-  margin-top: 24px;
+  margin-top: 48px;
+  font-size: 30px;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.post-slug h3 {
+  margin-top: 36px;
   font-size: 24px;
   margin-bottom: 4px;
-}
-.post-slug h3 {
-  margin-top: 24px;
-  font-size: 18px;
-  font-weight: 600;
+  line-height: 1.2;
+  /* font-weight: 600; */
 }
 
 .post-slug pre {
@@ -53,4 +63,13 @@
 .post-slug code {
   font-size: 16px;
   white-space: pre-wrap;
+}
+
+.post-slug blockquote {
+  border-left: 4px solid #d1d5db;
+  padding-left: 12px;
+}
+
+.post-slug .section-spacer {
+  margin-bottom: 48px;
 }

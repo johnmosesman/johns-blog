@@ -1,14 +1,22 @@
-import type { LoaderFunction } from "@remix-run/node";
+import { json, type LoaderFunction } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 
 import { buildMarkdownFiles, type MarkdownFile } from "~/lib/markdown";
 
-export const loader: LoaderFunction = async (): Promise<MarkdownFile[]> => {
-  return await buildMarkdownFiles();
+type LoaderData = {
+  posts: MarkdownFile[];
+  legacyPosts: MarkdownFile[];
+};
+
+export const loader: LoaderFunction = async () => {
+  let posts: MarkdownFile[] = await buildMarkdownFiles("app/lib/posts");
+  let legacyPosts: MarkdownFile[] = await buildMarkdownFiles("app/legacy/post");
+
+  return json<LoaderData>({ posts: posts, legacyPosts: legacyPosts });
 };
 
 export default function Writings() {
-  const markdownFiles: MarkdownFile[] = useLoaderData();
+  const { posts, legacyPosts } = useLoaderData<LoaderData>();
 
   return (
     <main className="flex flex-col">
@@ -31,7 +39,16 @@ export default function Writings() {
       </Link>
       <h1 className="mb-12 text-4xl">Writings</h1>
 
-      {markdownFiles.map((post: MarkdownFile, index: number) => {
+      {posts.map((post: MarkdownFile, index: number) => {
+        return (
+          <Link to={`/writings/${post.slug}`} className="mb-6" key={index}>
+            <p className="md:text-xl">{post.title}</p>
+            <p className="text-sm text-gray-500 md:text-lg">{post.date}</p>
+          </Link>
+        );
+      })}
+
+      {legacyPosts.map((post: MarkdownFile, index: number) => {
         return (
           <Link to={`/post/${post.slug}`} className="mb-6" key={index}>
             <p className="md:text-xl">{post.title}</p>
