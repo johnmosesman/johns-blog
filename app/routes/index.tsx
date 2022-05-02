@@ -1,7 +1,7 @@
 import { Link } from "@remix-run/react";
 
-import { Article } from "../lib/types/article";
-import { Video } from "../lib/types/video";
+import type { Article } from "../lib/types/article";
+import type { Video } from "../lib/types/video";
 
 import ArticlePreview from "../components/article-preview";
 import VideoPreview from "~/components/video-preview";
@@ -67,13 +67,16 @@ export default function Index() {
         <div>
           <p className="mb-2 md:text-xl">
             I'm a software developer building web3 at{" "}
-            <a href="https://0x1.software" className="underline">
-              0x1.software
+            <a
+              href="https://0x1.software"
+              className="border-1 border-b border-gray-900"
+            >
+              0x1
             </a>
             .
           </p>
           <p className="md:text-xl">
-            I like helping others learn how to become a developer.
+            I like helping others succeed as a developer.
           </p>
         </div>
       </div>
@@ -100,7 +103,7 @@ export default function Index() {
           <p className="mb-2 text-sm text-gray-700 md:text-lg">
             At this point I think most of us have heard of
             web3/cryptocurrencies. Without looking far you’ll see every
-            imaginable take on the topic
+            imaginable take on the topic.
           </p>
           <p className="mb-2 text-sm text-gray-700 md:text-lg">
             It is possible to be excited for the future of a technology,
