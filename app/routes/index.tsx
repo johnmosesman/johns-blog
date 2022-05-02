@@ -90,6 +90,7 @@ export default function Index() {
         <img
           src="/images/a-practical-take-on-web3-thumbnail-min.png"
           className="border-1 mx-auto mb-4 rounded border border-gray-300 lg:mb-0 lg:w-2/5"
+          alt="Practical take thumbnail"
         />
 
         <div className="lg:ml-12 lg:w-3/5">
