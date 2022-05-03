@@ -10,6 +10,8 @@ import strftime from "strftime";
 export interface MarkdownFile {
   slug: string;
   title: string;
+  description?: string;
+  thumbnail?: string;
   date: string;
   html: string;
 }
@@ -36,6 +38,8 @@ export const buildMarkdownFile = async (
   return {
     slug: fileName.replace(".md", ""),
     title: parsedData.data.title,
+    description: parsedData.data.description,
+    thumbnail: parsedData.data.thumbnail,
     date: strftime("%B %e, %Y", new Date(parsedData.data.date)),
     html: marked(parsedData.content),
   };

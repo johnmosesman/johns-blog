@@ -18,6 +18,7 @@ import baseStylesheetUrl from "./styles/base.css";
 import { getUser } from "./session.server";
 
 import Nav from "app/components/nav";
+import buildMeta from "~/lib/meta";
 
 export const links: LinksFunction = () => {
   return [
@@ -45,11 +46,9 @@ export const links: LinksFunction = () => {
   ];
 };
 
-export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title: "John Mosesman",
-  viewport: "width=device-width,initial-scale=1",
-});
+export const meta: MetaFunction = () => {
+  return buildMeta();
+};
 
 type LoaderData = {
   user: Awaited<ReturnType<typeof getUser>>;
