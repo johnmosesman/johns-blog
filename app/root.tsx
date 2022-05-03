@@ -16,7 +16,6 @@ import {
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import baseStylesheetUrl from "./styles/base.css";
 import { getUser } from "./session.server";
-import defaultMeta from "~/lib/meta";
 
 import Nav from "app/components/nav";
 import buildMeta from "~/lib/meta";
