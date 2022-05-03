@@ -1,13 +1,22 @@
-import type { LoaderFunction } from "@remix-run/node";
+import type { LoaderFunction, MetaFunction } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 
 import { buildMarkdownFile, type MarkdownFile } from "~/lib/markdown";
 
 import styles from "~/styles/post-slug.css";
+import buildMeta from "~/lib/meta";
 
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
 }
+
+export const meta: MetaFunction = ({ data }: { data: MarkdownFile }) => {
+  let title: string = data.title;
+  let description: string | undefined = data.description;
+  let image: string | undefined = data.thumbnail;
+
+  return buildMeta(title, description, image);
+};
 
 export const loader: LoaderFunction = async ({
   params,

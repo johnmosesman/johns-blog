@@ -1,6 +1,8 @@
 +++
 date = "2022-04-26"
 title = "A practical take on web3"
+description = "It is possible to be excited for the future of a technology, participate in it, and also see it for what it is? To see all of its possibility and also its shortcomings—and the variety of actors and motives in the space? I hope so, and the entire point of this post is to attempt to give just that: a practical take on web3."
+thumbnail = "/images/a-practical-take-on-web3/a-practical-take-on-web3-thumbnail-min.png"
 +++
 
 ![Thumbnail](/images/a-practical-take-on-web3/a-practical-take-on-web3-thumbnail-min.png)
