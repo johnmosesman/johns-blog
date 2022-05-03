@@ -1,4 +1,4 @@
-import { HtmlMetaDescriptor } from "@remix-run/server-runtime";
+import type { HtmlMetaDescriptor } from "@remix-run/server-runtime";
 
 let defaultTitle: string = "John Mosesman";
 let defaultDescription: string =

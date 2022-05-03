@@ -1,5 +1,4 @@
 import { Link } from "@remix-run/react";
-import type { MetaFunction } from "@remix-run/node";
 
 import type { Article } from "../lib/types/article";
 import type { Video } from "../lib/types/video";
