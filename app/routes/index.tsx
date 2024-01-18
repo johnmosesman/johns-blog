@@ -13,21 +13,21 @@ export default function Index() {
       thumbnailUrl: "/images/how-to-become-a-developer-thumbnail.png",
       title: "How To Become A Developer Talk",
       duration: "37min",
-      views: "300k views",
+      views: "425k views",
     },
     {
       url: "https://www.youtube.com/watch?v=5azUw1Asp20",
       thumbnailUrl: "/images/how-to-become-a-developer-review-thumbnail.jpeg",
       title: 'Reviewing my talk "How To Become A Developer" 2.5 years later',
       duration: "32min",
-      views: "6.2k views",
+      views: "8.7k views",
     },
     {
       url: "https://www.youtube.com/watch?v=jV-lAT5jgx0",
       thumbnailUrl: "/images/dont-need-cs-degree-thumbnail.png",
       title: "Why you don't need a computer science degree to program",
       duration: "30min",
-      views: "1.3k views",
+      views: "1.7k views",
     },
   ];
 
