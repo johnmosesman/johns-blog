@@ -15,7 +15,6 @@ import {
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import baseStylesheetUrl from "./styles/base.css";
-import { getUser } from "./session.server";
 
 import Nav from "app/components/nav";
 import buildMeta from "~/lib/meta";
@@ -48,16 +47,6 @@ export const links: LinksFunction = () => {
 
 export const meta: MetaFunction = () => {
   return buildMeta();
-};
-
-type LoaderData = {
-  user: Awaited<ReturnType<typeof getUser>>;
-};
-
-export const loader: LoaderFunction = async ({ request }) => {
-  return json<LoaderData>({
-    user: await getUser(request),
-  });
 };
 
 export default function App() {
