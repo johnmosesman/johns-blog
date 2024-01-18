@@ -66,12 +66,12 @@ export default function Index() {
 
         <div>
           <p className="mb-2 md:text-xl">
-            I'm a software developer building web3 at{" "}
+            I'm co-founder and a software developer at{" "}
             <a
-              href="https://0x1.software"
+              href="https://startupventures.io"
               className="border-1 border-b border-gray-900"
             >
-              0x1
+              Startup Ventures
             </a>
             .
           </p>
